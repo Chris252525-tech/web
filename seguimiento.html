@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Seguimiento de Mantenimiento - UTSOE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #6188a1;
+      padding: 15px 30px;
+      color: white;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 50px;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      padding: 10px 15px;
+      display: inline-block;
+      transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+      color: darkgray;
+    }
+
+    .hero {
+      text-align: center;
+      background: #ddd;
+      padding: 20px;
+    }
+
+    .seguimiento-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .seguimiento-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #6188a1;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    .estado-pendiente {
+      color: #e67e22;
+      font-weight: bold;
+    }
+
+    .estado-enproceso {
+      color: #2980b9;
+      font-weight: bold;
+    }
+
+    .estado-completado {
+      color: #27ae60;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #6188a1;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 100%;
+    }
+
+    .footer-section {
+      width: 100%;
+      max-width: 400px;
+      margin: auto;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      footer {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .footer-section {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">UTSOE - Mantenimiento</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Seguimiento de Solicitudes</h1>
+    <p>Consulta el estado de los reportes de mantenimiento enviados</p>
+  </div>
+
+  <div class="seguimiento-container">
+    <h2>Solicitudes Recientes</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Folio</th>
+          <th>Fecha</th>
+          <th>Edificio</th>
+          <th>Ubicación</th>
+          <th>Problema</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>#00123</td>
+          <td>15/04/2025</td>
+          <td>Edificio A</td>
+          <td>Aula 101</td>
+          <td>Fuga de agua</td>
+          <td class="estado-pendiente">Pendiente</td>
+        </tr>
+        <tr>
+          <td>#00124</td>
+          <td>14/04/2025</td>
+          <td>Laboratorios</td>
+          <td>Sala de Cómputo</td>
+          <td>Aire acondicionado falla</td>
+          <td class="estado-enproceso">En proceso</td>
+        </tr>
+        <tr>
+          <td>#00121</td>
+          <td>10/04/2025</td>
+          <td>Edificio C</td>
+          <td>Baños</td>
+          <td>Luz fundida</td>
+          <td class="estado-completado">Completado</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>
+    <div class="footer-section">
+      <p>&copy; 2025 UTSOE - Departamento de Mantenimiento</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Botón para regresar -->
+        <a href="index.html">
+            <img src="Logo.png" alt="Regresar" style="width: 40px; height: 40px;">
+        </a>
+        
+
+        <h2>PRESTAMOS</h2>
+        <p>Tool Manager</p>
+
+        <!-- Inicio del formulario -->
+        <form action="procesar.php" method="post">
+
+            <div class="form-group">
+                <label for="tipo_herramienta">Tipo de Herramienta:</label>
+                <select name="tipo_herramienta" id="tipo_herramienta" required>
+                    <!-- Opciones aquí -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Ingrese sus apellidos" required>
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" placeholder="Ingrese su edad" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fecha_prestamo">Fecha de Préstamo:</label>
+                <input type="date" id="fecha_prestamo" name="fecha_prestamo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fecha_devolucion">Fecha Estimada de Devolución:</label>
+                <input type="date" id="fecha_devolucion" name="fecha_devolucion" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su número" required>
+            </div>
+
+            <button type="submit">Registrar Préstamo</button>
+
+        </form> <!-- Cierre del formulario -->
+
+        <footer>
+            <p>UTSOE<br>Guanajuato<br>México</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>
